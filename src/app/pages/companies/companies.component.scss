@@ -1,0 +1,43 @@
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .search__input {
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: var(--light-grey);
+    padding: 5px 7px;
+    color: var(--grey);
+    width: 50%;
+
+    input {
+      width: 93%;
+      margin-left: 1rem;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .search__btn-create-company {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    color: #fff;
+    background: var(--blue);
+    border: none;
+    border-radius: 5px;
+    span {
+      margin: 0 5px;
+    }
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 15px;
+}

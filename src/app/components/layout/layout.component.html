@@ -1,0 +1,56 @@
+<div class="view-container">
+  <aside class="aside-bar" [class.active]="activeMenu">
+    <div class="aside-bar__logo">
+      <img src="/assets/images/singlar_logo.png" alt="Singlar Innovación" />
+    </div>
+    <nav class="nav">
+      <a class="nav__portada nav__item-link" routerLink="/">
+        <i class="fa-solid fa-shield-halved"></i>
+        <p>Portada</p>
+      </a>
+      <section ngbAccordion>
+        <article ngbAccordionItem *ngFor="let item of menu">
+          <h2 ngbAccordionHeader>
+            <button ngbAccordionButton>
+              <i [class]="'fa-solid ' + item.icon + ' button-icon'"></i>
+              <span>{{ item.text }}</span>
+            </button>
+          </h2>
+          <div ngbAccordionCollapse>
+            <div ngbAccordionBody *ngFor="let subItem of item.items">
+              <a class="nav__item-link" [routerLink]="subItem.routerLink">
+                <i [class]="'fa-solid ' + subItem.icon"></i>
+                <span>{{ subItem.text }}</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </nav>
+  </aside>
+  <main class="main-container" [class.all]="!activeMenu">
+    <header>
+      <div class="menu-icon" (click)="toggleASide()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="user-info">
+        <div class="language">
+          <img src="/assets/images/spain_flag.png" alt="español" />
+        </div>
+        <div class="info">
+          <p class="username">BeWise Desarrollo</p>
+          <p class="email">bewise.desarrollo@singlar.com</p>
+        </div>
+        <div class="user-icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </header>
+    <div class="page-header">
+      <h1 class="page-header__title">Administración/Compañias</h1>
+    </div>
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

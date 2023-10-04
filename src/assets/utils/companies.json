@@ -1,0 +1,380 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "sync": 1,
+      "name": "Singlar Innovación",
+      "webUrl": "https://www.google.com",
+      "email": "correo@gmail.com",
+      "phone": "12345678",
+      "description": "Esta es una descripción de prueba",
+      "usersCount": "15",
+      "users": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com",
+          "area": "Area 1",
+          "phone": "12345678"
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com",
+          "area": "Area 2",
+          "phone": "22345678"
+        },
+        {
+          "id": 3,
+          "name": "Test 3",
+          "email": "test3@gmail.com",
+          "area": "Area 3",
+          "phone": "32345678"
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com",
+          "area": "Area 4",
+          "phone": "42345678"
+        },
+        {
+          "id": 5,
+          "name": "Test 5",
+          "email": "test5@gmail.com",
+          "area": "Area 5",
+          "phone": "52345678"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sync": 1,
+      "name": "Nunsys",
+      "webUrl": "https://www.googlenunsys.com",
+      "email": "nunsys@gmail.com",
+      "phone": "12345678",
+      "description": "Esta es una descripción de prueba 2",
+      "usersCount": "28",
+      "users": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com",
+          "area": "Area 1",
+          "phone": "12345678"
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com",
+          "area": "Area 2",
+          "phone": "22345678"
+        },
+        {
+          "id": 3,
+          "name": "Test 3",
+          "email": "test3@gmail.com",
+          "area": "Area 3",
+          "phone": "32345678"
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com",
+          "area": "Area 4",
+          "phone": "42345678"
+        },
+        {
+          "id": 5,
+          "name": "Test 5",
+          "email": "test5@gmail.com",
+          "area": "Area 5",
+          "phone": "52345678"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "sync": 2,
+      "name": "SOFISTIC Colombia",
+      "webUrl": "https://www.googlenunsys.com",
+      "email": "sofistic@gmail.com",
+      "phone": "12345678",
+      "description": "Esta es una descripción de prueba 3",
+      "usersCount": "7",
+      "users": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com",
+          "area": "Area 1",
+          "phone": "12345678"
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com",
+          "area": "Area 2",
+          "phone": "22345678"
+        },
+        {
+          "id": 3,
+          "name": "Test 3",
+          "email": "test3@gmail.com",
+          "area": "Area 3",
+          "phone": "32345678"
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com",
+          "area": "Area 4",
+          "phone": "42345678"
+        },
+        {
+          "id": 5,
+          "name": "Test 5",
+          "email": "test5@gmail.com",
+          "area": "Area 5",
+          "phone": "52345678"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "sync": 1,
+      "name": "Banco de España",
+      "webUrl": "https://www.bancodeespaña.com",
+      "email": "bancodeespaña@gmail.com",
+      "phone": "12345678",
+      "description": "Esta es una descripción de prueba 4",
+      "usersCount": "17",
+      "users": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com",
+          "area": "Area 1",
+          "phone": "12345678"
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com",
+          "area": "Area 2",
+          "phone": "22345678"
+        },
+        {
+          "id": 3,
+          "name": "Test 3",
+          "email": "test3@gmail.com",
+          "area": "Area 3",
+          "phone": "32345678"
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com",
+          "area": "Area 4",
+          "phone": "42345678"
+        },
+        {
+          "id": 5,
+          "name": "Test 5",
+          "email": "test5@gmail.com",
+          "area": "Area 5",
+          "phone": "52345678"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "sync": 1,
+      "name": "ISS Profesonalia",
+      "webUrl": "https://www.iss.com",
+      "email": "iss@gmail.com",
+      "phone": "12345678",
+      "description": "Esta es una descripción de prueba 5",
+      "usersCount": "6",
+      "users": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com",
+          "area": "Area 1",
+          "phone": "12345678"
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com",
+          "area": "Area 2",
+          "phone": "22345678"
+        },
+        {
+          "id": 3,
+          "name": "Test 3",
+          "email": "test3@gmail.com",
+          "area": "Area 3",
+          "phone": "32345678"
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com",
+          "area": "Area 4",
+          "phone": "42345678"
+        },
+        {
+          "id": 5,
+          "name": "Test 5",
+          "email": "test5@gmail.com",
+          "area": "Area 5",
+          "phone": "52345678"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "sync": 1,
+      "name": "Ajoomal",
+      "webUrl": "https://www.Ajoomal.com",
+      "email": "Ajoomal@gmail.com",
+      "phone": "12345678",
+      "description": "Esta es una descripción de prueba 6",
+      "usersCount": "29",
+      "users": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com",
+          "area": "Area 1",
+          "phone": "12345678"
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com",
+          "area": "Area 2",
+          "phone": "22345678"
+        },
+        {
+          "id": 3,
+          "name": "Test 3",
+          "email": "test3@gmail.com",
+          "area": "Area 3",
+          "phone": "32345678"
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com",
+          "area": "Area 4",
+          "phone": "42345678"
+        },
+        {
+          "id": 5,
+          "name": "Test 5",
+          "email": "test5@gmail.com",
+          "area": "Area 5",
+          "phone": "52345678"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "sync": 2,
+      "name": "Sothis",
+      "webUrl": "https://www.Sothis.com",
+      "email": "Sothis@gmail.com",
+      "phone": "12345778",
+      "description": "Esta es una descripción de prueba 7",
+      "usersCount": "13",
+      "users": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com",
+          "area": "Area 1",
+          "phone": "12345678"
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com",
+          "area": "Area 2",
+          "phone": "22345678"
+        },
+        {
+          "id": 3,
+          "name": "Test 3",
+          "email": "test3@gmail.com",
+          "area": "Area 3",
+          "phone": "32345678"
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com",
+          "area": "Area 4",
+          "phone": "42345678"
+        },
+        {
+          "id": 5,
+          "name": "Test 5",
+          "email": "test5@gmail.com",
+          "area": "Area 5",
+          "phone": "52345678"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "sync": 2,
+      "name": "BeWise",
+      "webUrl": "https://www.BeWise.com",
+      "email": "Sothis@gmail.com",
+      "phone": "12321323",
+      "description": "Esta es una descripción de prueba 8",
+      "usersCount": "32",
+      "users": [
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com",
+          "area": "Area 1",
+          "phone": "12345678"
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com",
+          "area": "Area 2",
+          "phone": "22345678"
+        },
+        {
+          "id": 3,
+          "name": "Test 3",
+          "email": "test3@gmail.com",
+          "area": "Area 3",
+          "phone": "32345678"
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com",
+          "area": "Area 4",
+          "phone": "42345678"
+        },
+        {
+          "id": 5,
+          "name": "Test 5",
+          "email": "test5@gmail.com",
+          "area": "Area 5",
+          "phone": "52345678"
+        }
+      ]
+    }
+  ]
+}

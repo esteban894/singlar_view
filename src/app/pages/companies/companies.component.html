@@ -1,0 +1,23 @@
+<div>
+  <section class="search">
+    <div class="search__input">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" placeholder="Buscar compañías" />
+    </div>
+    <button class="search__btn-create-company">
+      <i class="fa-solid fa-circle-plus"></i>
+      <span>Crear compañía</span>
+    </button>
+  </section>
+  <section class="cards">
+    <app-card *ngFor="let company of companies" [company]="company"></app-card>
+  </section>
+
+  <section class="pagination d-flex justify-content-center mt-4">
+    <ngb-pagination
+      [collectionSize]="16"
+      [(page)]="page"
+      aria-label="Default pagination"
+    ></ngb-pagination>
+  </section>
+</div>

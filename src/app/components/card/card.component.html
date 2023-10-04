@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="img">
+    <i class="fa-solid fa-building"></i>
+  </div>
+  <h2 class="name">{{ company.name }}</h2>
+  <div class="info">
+    <div class="group-info">
+      <p class="users-label">Usuarios</p>
+      <p class="users-count">{{ company.usersCount }}</p>
+    </div>
+    <div class="group-info">
+      <p class="sync-label">Sincronización</p>
+      <p
+        [ngClass]="{
+          sync: true,
+          demo: company.sync === 1,
+          active: company.sync === 2
+        }"
+      >
+        {{ company.sync === 1 ? "DEMO" : "ACTIVA" }}
+      </p>
+    </div>
+  </div>
+  <a [href]="company.webUrl" target="_blank" class="btn-detail">Detalles</a>
+</div>
