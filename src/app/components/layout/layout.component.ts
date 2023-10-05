@@ -34,9 +34,9 @@ export class LayoutComponent {
     },
   ];
 
-  activeMenu = false;
+  activeMenu = true;
 
-  toggleASide() {
+  toggleAside() {
     this.activeMenu = !this.activeMenu;
   }
 }

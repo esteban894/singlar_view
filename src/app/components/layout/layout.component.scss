@@ -9,7 +9,7 @@
     box-shadow: 0px 0px 25px #3a3a3a3a;
 
     transform: translateX(-100%);
-    transition: all ease-out 0.5s;
+    transition: all ease 0.5s;
 
     &.active {
       transform: translateX(0);
@@ -120,11 +120,7 @@
   .main-container {
     flex-grow: 1;
     background: var(--light-grey);
-    transition: all ease-out 0.5s;
-
-    &.all {
-      width: 100%;
-    }
+    transition: all ease 0.5s;
 
     header {
       background-color: #fff;
@@ -159,6 +155,10 @@
           font-weight: bold;
           color: var(--grey);
         }
+      }
+
+      .all {
+        margin-left: 0;
       }
     }
 
