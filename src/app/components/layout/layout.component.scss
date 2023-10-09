@@ -3,21 +3,26 @@
   min-height: 100vh;
 
   .aside-bar {
-    width: 15rem;
     max-width: 20vw;
     z-index: 1;
     box-shadow: 0px 0px 25px #3a3a3a3a;
 
     transform: translateX(-100%);
     transition: all ease 0.5s;
+    opacity: 0;
+    overflow: hidden;
+    width: 0;
 
     &.active {
+      width: 12.5rem;
       transform: translateX(0);
+      opacity: 1;
+      overflow: visible;
     }
 
     .aside-bar__logo {
       width: 100%;
-      padding: 2rem;
+      padding: 1rem;
       text-align: center;
       img {
         width: 70%;
@@ -69,11 +74,13 @@
       [ngbAccordionButton] {
         background-color: transparent;
         display: flex;
-        height: 4rem;
+        height: 3rem;
         column-gap: 0.5rem;
         color: var(--grey);
+        font-size: 0.9rem;
         border-left: 0.3rem solid transparent;
         transition: border-left 0.4s ease;
+        border-bottom: 0.1rem solid var(--light-grey);
 
         &[aria-expanded="true"]::after {
           transform: rotate(0deg);
@@ -90,7 +97,7 @@
         &:not(.collapsed) {
           box-shadow: 0 4px 8px #fafafa;
           border-left: 0.3rem solid var(--blue);
-
+          box-shadow: 0 0.2rem 0.1rem var(--light-grey);
           p {
             color: var(--blue);
           }
@@ -107,7 +114,7 @@
         column-gap: 0.5rem;
         color: var(--grey);
         padding-left: 2rem;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         text-decoration: none;
 
         p {
@@ -117,7 +124,7 @@
     }
   }
 
-  .main-container {
+  main {
     flex-grow: 1;
     background: var(--light-grey);
     transition: all ease 0.5s;
@@ -135,14 +142,14 @@
 
       .user-info {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
         column-gap: 1.5rem;
       }
 
       .language {
         img {
-          width: 2rem;
+          width: 1.5rem;
         }
       }
 
@@ -153,7 +160,11 @@
 
         .username {
           font-weight: bold;
+          font-size: 0.75rem;
           color: var(--grey);
+        }
+        .email {
+          font-size: 0.75rem;
         }
       }
 
@@ -165,7 +176,7 @@
     .page-header {
       background-image: url("/assets/images/header_blue_bg.jpg");
       background-size: cover;
-      min-height: 15rem;
+      min-height: 10rem;
       border-radius: 0 0 15px 15px;
       display: flex;
       align-items: center;
@@ -173,17 +184,18 @@
 
       .page-header__title {
         color: #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
       }
     }
 
     .page-content {
-      background: #fff;
-      padding: 2rem;
       width: 95%;
       margin: auto;
       margin-top: -40px;
-      border-radius: 5px;
-      box-shadow: 0 0 20px -10px #3a3a3a;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
   }
 }

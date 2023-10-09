@@ -1,0 +1,35 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">NOMBRE</th>
+      <th scope="col">CORREO ELECTRONICO</th>
+      <th scope="col">DEPARTAMENTO</th>
+      <th scope="col">TELEFONO</th>
+      <th scope="col">OPC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>
+        {{ user.name }}
+      </td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.area }}</td>
+      <td>{{ user.phone }}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square"></i>
+        <i class="fa-solid fa-trash-can icon-red"></i>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-center p-2">
+  <ngb-pagination
+    [collectionSize]="collectionSize"
+    [(page)]="page"
+    [pageSize]="pageSize"
+    (pageChange)="refreshCountries()"
+  >
+  </ngb-pagination>
+</div>

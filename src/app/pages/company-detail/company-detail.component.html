@@ -1,0 +1,57 @@
+<div class="header card-box">
+  <a routerLink="/companies" class="btn-back">
+    <i class="fa-solid fa-arrow-left"></i>
+    <p>Atrás</p>
+  </a>
+
+  <div class="header__company">
+    <img
+      src="assets/images/singlar_logo.png"
+      alt="Singlar logo"
+      width="200px"
+    />
+    <div class="company-data">
+      <h2 class="company-title">{{ company?.name }}</h2>
+      <a class="company-link" [href]="company?.webUrl">{{ company?.webUrl }}</a>
+      <p class="company-description">{{ company?.description }}</p>
+    </div>
+  </div>
+</div>
+<div class="content-card card-box">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <button ngbNavLink>Información</button>
+      <ng-template ngbNavContent>
+        <div class="cards-container">
+          <div class="card">
+            <div class="data-group">
+              <i class="fa-solid fa-earth-americas"></i>
+              <a [href]="company?.webUrl">{{ company?.webUrl }}</a>
+            </div>
+            <div class="data-group">
+              <i class="fa-solid fa-envelope"></i>
+              <p>{{ company?.email }}</p>
+            </div>
+            <div class="data-group">
+              <i class="fa-solid fa-phone"></i>
+              <p>{{ company?.phone }}</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="data-group">
+              <h3>Descripción</h3>
+              <p>{{ company?.description }}</p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <button ngbNavLink>Usuarios</button>
+      <ng-template ngbNavContent>
+        <app-users-table [companyId]="paramId" />
+      </ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>

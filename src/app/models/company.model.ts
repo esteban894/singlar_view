@@ -10,7 +10,7 @@ export interface Company {
   users: User[];
 }
 
-interface User {
+export interface User {
   id: number;
   name: string;
   email: string;

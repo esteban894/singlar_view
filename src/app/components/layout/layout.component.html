@@ -28,7 +28,7 @@
       </section>
     </nav>
   </aside>
-  <main class="main-container" [class.all]="!activeMenu">
+  <main [class.all]="!activeMenu">
     <header>
       <div class="menu-icon" (click)="toggleAside()">
         <i class="fa-solid fa-bars"></i>
@@ -47,7 +47,7 @@
       </div>
     </header>
     <div class="page-header">
-      <h1 class="page-header__title">Administración/Compañias</h1>
+      <h1 class="page-header__title">Administración / Compañias</h1>
     </div>
     <div class="page-content">
       <router-outlet></router-outlet>

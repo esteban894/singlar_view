@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Company } from 'src/app/models/company.model';
-import { CompaniesService } from 'src/app/services/companies.service';
+import { CompanyService } from 'src/app/services/company.service';
 
 @Component({
   selector: 'app-companies',
@@ -10,10 +10,10 @@ import { CompaniesService } from 'src/app/services/companies.service';
 export class CompaniesComponent implements OnInit {
   page = 1;
   companies: Company[] = [];
-  constructor(private companiesService: CompaniesService) {}
+  constructor(private companyService: CompanyService) {}
 
   ngOnInit(): void {
-    this.companiesService.getCompanies().subscribe((data) => {
+    this.companyService.getCompanies().subscribe((data) => {
       this.companies = data.companies;
       console.log(this.companies);
     });

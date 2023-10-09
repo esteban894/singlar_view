@@ -9,9 +9,11 @@
 :root {
   --light-grey: #efefef;
   --grey: #8a92a6;
+  --dark-grey: #464863;
   --light-blue: #0063b9;
   --blue: #326eca;
   --dark-blue: #000428;
+  --red: #e90000;
 }
 
 * {
@@ -22,4 +24,9 @@
 
 body {
   font-family: Montserrat, sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
