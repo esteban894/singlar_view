@@ -25,11 +25,6 @@
 </table>
 
 <div class="d-flex justify-content-center p-2">
-  <ngb-pagination
-    [collectionSize]="collectionSize"
-    [(page)]="page"
-    [pageSize]="pageSize"
-    (pageChange)="refreshCountries()"
-  >
+  <ngb-pagination [collectionSize]="collectionSize" [(page)]="page">
   </ngb-pagination>
 </div>

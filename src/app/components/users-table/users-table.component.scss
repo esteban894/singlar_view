@@ -1,3 +1,24 @@
-.icon-red {
-  color: var(--red);
+.table {
+  * {
+    color: var(--dark-grey);
+  }
+
+  th {
+    color: var(--blue);
+  }
+
+  .icon-red {
+    color: var(--red);
+  }
+}
+
+ngb-pagination {
+  .pagination {
+    .page-item {
+      border-radius: 50%;
+      .page-link {
+        border-radius: 50%;
+      }
+    }
+  }
 }

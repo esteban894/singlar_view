@@ -12,7 +12,9 @@
     />
     <div class="company-data">
       <h2 class="company-title">{{ company?.name }}</h2>
-      <a class="company-link" [href]="company?.webUrl">{{ company?.webUrl }}</a>
+      <a class="company-link" [href]="company?.webUrl" target="_blank">{{
+        company?.webUrl
+      }}</a>
       <p class="company-description">{{ company?.description }}</p>
     </div>
   </div>
